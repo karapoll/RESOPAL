@@ -22,7 +22,7 @@ cross-browser opacity
 
 slick slider / 
 
-http://kenwheeler.github.io/slick
+http://kenwheeler.github.io/slick/
 
 
 
