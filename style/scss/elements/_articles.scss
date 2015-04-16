@@ -1,0 +1,45 @@
+/*********************************************************************************/
+/* Articles                                                                      */
+/*********************************************************************************/
+
+#primSection {
+
+	article {
+		@include float(left);
+		width: 32%;
+		margin-right: 2%;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
+
+#secSection {
+
+	article {
+		@include pie-clearfix;
+		width: $full-width;
+		margin-bottom: u(2rem);
+
+		img {
+			@include float(left);
+			width: 34%;
+		}
+
+		.contentArticle {
+			@include float(left);
+			width: 64%;
+			padding-left: 2%;
+
+			h3 {
+				margin-top: 0;
+				line-height: u(1rem);
+
+				a {
+					line-height: u(1rem);
+				}
+			}
+		}
+	}
+}

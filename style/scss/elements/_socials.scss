@@ -1,0 +1,119 @@
+/*********************************************************************************/
+/* Socials                                                                       */
+/*********************************************************************************/
+
+#social {
+	margin: 0 auto;
+	margin-top: u(15rem);
+
+	p {
+		text-align: center;
+		margin-bottom: u(1rem);
+	}
+
+	.redirect-socials {
+		width: u(29rem);
+		margin: 0 auto;
+
+	  	-webkit-font-smoothing: antialiased;
+	  	-moz-osx-font-smoothing: grayscale;
+
+	  	li {
+		  	display: inline-block;
+		  	margin-right: u(0.4rem);
+		  	margin-bottom: u(0.6rem);
+
+		  	&:last-child {
+			  	margin-right: 0;
+			}
+		}
+
+		a {
+			@include inline-block;
+		  	font-size: u(0.8rem);
+		  	text-decoration: none;
+		  	font-weight: bold;
+		  	padding: u(0.6rem 1.2rem 0.8rem);
+		  	position: relative;
+
+		  	@include transition-property(all);
+			@include transition-duration(0.2s);
+
+		  	span {
+			  	position: relative;
+			  	z-index: 5;
+			}
+
+			&:before {
+				@include inline-block;
+			  	content: '';
+			  	position: absolute;
+			  	z-index: 1;
+			  	width: $full-width;
+			  	height: $full-height;
+			  	left: 0;
+			  	bottom: 0;
+
+			  	@include transform(scale(1, 0));
+			  	@include transform-origin(50%, 100%);
+
+			  	@include transition-property(all);
+			  	@include transition-duration(0.2s);
+			  	// @include transition-timing-function(ease-in);
+			}
+
+			&:hover {
+			  	color: $white;
+			}
+
+			&:hover:before {
+			  	@include transform(scale(1, 1));
+			}
+		}
+
+		.twitter {
+		  	color: $color_twitter;
+		  	@include box-shadow($color_twitter 0 -2px 0 inset);
+
+		  	&:before {
+			  	background: $color_twitter;
+			}
+		}
+
+		.facebook {
+		  	color: $color_facebook;
+		  	@include box-shadow($color_facebook 0 -2px 0 inset);
+
+		  	&:before {
+			  	background: $color_facebook;
+			}
+		}
+
+		.google {
+		  	color: $color_google;
+		  	@include box-shadow($color_google 0 -2px 0 inset);
+
+		  	&:before {
+			  	background: $color_google;
+			}
+		}
+
+		.dribbble {
+		  	color: $color_dribbble;
+		  	@include box-shadow($color_dribbble 0 -2px 0 inset);
+
+		  	&:before {
+			  	background: $color_dribbble;
+			}
+		}
+
+		.rss {
+		  	color: $color_rss;
+		  	@include box-shadow($color_rss 0 -2px 0 inset);
+
+		  	&:before {
+			  	background: $color_rss;
+			}
+		}
+	}
+}

@@ -1,0 +1,129 @@
+/*********************************************************************************/
+/* Sliders                                                                       */
+/*********************************************************************************/
+
+/* Slider1 */
+
+.slider-wrapper1 {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+
+	.item1 {
+		width: 95%;
+	}
+}
+
+.slick-prev, 
+.slick-next {
+	@include opacity(0.75);
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	width: u(2.5rem);
+	height: u(2.5rem);
+	margin-top: u(-0.625rem);
+	padding: 0;
+	cursor: pointer;
+	color: transparent;
+	border: 0 none;
+	outline: none;
+	background: transparent;
+	position: absolute;
+	top: 50%;
+
+	&:before {
+		@include opacity(0.25);
+		font-size: u(1.7rem);
+		color: $grey;
+		font-family: $font_1;
+	}
+}
+
+.slick-prev {
+	left: -5%;
+
+	&:before {
+		content: '\ea44';
+	}
+}
+
+.slick-next {
+	right: -5%;
+
+	&:before {
+		content: '\ea42';
+	}
+}
+
+.slick-dots {
+	position: absolute;
+	bottom: u(-2rem);
+	left: 0;
+	opacity: 0.75;
+
+	li button:before {
+		font-family: $font_1;
+		content: '\ea56';
+		color: $black;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: u(1.25rem);
+		height: u(1.25rem);
+		text-align: center;
+		font-size: u(0.3rem);
+		line-height: u(1.25rem);
+		@include opacity(0.25);
+	}
+}
+
+/* Slider2 */
+
+.slider-wrapper2 {
+	width: $full-width;
+	margin: 0 auto;
+
+	.item2 {
+		width: $full-width;
+	}
+
+	.item3 {
+		width: 90%;
+	}
+}
+
+.slider-nav {
+	width: 30%;
+	margin: 0 auto;
+	position: relative;
+
+	.slick-prev, 
+	.slick-next {
+		color: $black;
+		width: u(1rem);
+		height: u(1rem);
+		position: absolute;
+		top: 50%;
+
+		&:before {
+			font-size: u(1rem);
+		}
+	}
+
+	.slick-prev {
+		left: -20%;
+
+		&:before {
+			content: '\e693';
+		}
+	}
+
+	.slick-next {
+		right: -20%;
+
+		&:before {
+			content: '\e696';
+		}
+	}
+}

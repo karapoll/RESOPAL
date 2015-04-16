@@ -1,0 +1,92 @@
+/*********************************************************************************/
+/* Size-m                                                                        */
+/*********************************************************************************/
+
+@media screen and (max-width: 980px) {
+
+	h2 {
+		font-size: 2.4rem;
+	}
+
+	h3 {
+		font-size: 1.1rem;
+	}
+
+	#header {
+		top: -2rem;
+
+		h1 a {
+			font-size: 3.2rem;
+			margin-bottom: 0.5rem;
+		}
+
+		p {
+			font-size: 0.9rem;
+			margin: 2rem;
+		}
+	}
+
+	
+	#navSite .primaryNav li a {
+		font-size: 0.8rem;
+	}
+
+	#secSection article {
+		width: $full-width;
+		margin-bottom: 2rem;
+
+		img,
+		.contentArticle {
+			width: $full-width;
+			float: none;
+			padding: 0;
+		}
+
+		img {
+			margin-bottom: 2rem;
+		}
+	}
+
+	#sliSection .slider-wrapper .slider {
+
+		.slick-prev {
+			left: -10%;
+		}
+
+		.slick-next {
+			right: -10%;
+		}
+	}
+
+	#thirdSection #accordion {
+
+		.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+			left: 0;
+		}
+
+		h3 {
+			padding-left: 1rem;
+		}
+	}
+
+	#formSection .resp-form .column {
+		width: 70%;
+		float: none;
+		margin: 0 auto;
+	}
+
+	#footer p a {
+		font-size: 0.8rem;
+	}
+
+	form.search input[type="text"]:focus {
+		width: 90%;
+	}
+
+	form.search input[type="text"] { 
+		@include input-placeholder {
+			font-size: 2.2rem;
+	    	padding-top: 0.5rem;
+		}
+	}
+}

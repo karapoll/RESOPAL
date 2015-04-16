@@ -1,0 +1,145 @@
+/*********************************************************************************/
+/* Size-s                                                                        */
+/*********************************************************************************/
+
+@media screen and (max-width: 580px) {
+
+	h1 {
+		font-size: 3.5rem;
+		margin-bottom: 1.4rem;
+	}
+
+	h2 {
+		line-height: 2.2rem;
+	}
+
+	#header {
+		position: initial;
+
+		p {
+			font-size: 0.8rem;
+		}
+	}
+
+	#navSite {
+		position: initial;
+		@include opacity(1);
+
+		ul.primaryNav li {
+		  	width: $full-width;
+		  	float: none;
+
+		  	a {
+			  	font-size: 0.8rem;
+			}
+		}
+	}
+
+	#zeroSection {
+
+		.primImg {
+			display: none;
+		}
+
+		form.search input[type="text"] {
+			font-size: 2rem;
+
+			@include input-placeholder {
+				font-size: 0;
+			}
+		}
+	}
+
+	#sliSection {
+
+		.slick-prev {
+			left: -12%;
+		}
+
+		.slick-next {
+			right: -12%;
+		}
+
+		.slick-prev::before, 
+		.slick-next::before {
+		  	font-size: 1.3rem;
+		}
+	}
+
+	#primSection {
+
+		article {
+			width: $full-width;
+			float: none;
+			margin-bottom: 1rem;
+		}
+	}
+
+	#primSection article,
+	#secSection {
+		h3 {
+			text-align: center;
+		}
+	}
+	
+	#thirdSection {
+
+		#accordion {
+
+			h3.ui-accordion-header {
+				text-align: center;
+				padding-left: 0;
+				margin-bottom: 1rem;
+			}
+
+			.ui-accordion-header-icon {
+				display: none;
+			}
+		}
+	}
+
+	#fourthSection {
+
+		.ui-tabs .ui-tabs-nav li {
+			float: none;
+			text-align: center;
+			margin: 1rem 0;
+		}
+
+		.ui-tabs .ui-widget-header .ui-state-default a {
+			float: none;
+			text-align: center;
+		}
+	}
+
+	#fifthSection .slider-wrapper2 .slider-nav .slick-list {
+		display: none;
+	}
+
+	#formSection .resp-form .column {
+	  width: 77%;
+	}
+
+	#conSection {
+	  width: 70%;
+	}
+
+	#social .redirect-socials {
+	  width: $full-width;
+
+	  li {
+			display: block;
+			text-align: center;
+			margin-right: 0;
+			margin-bottom: 1rem;
+		}
+	}
+
+	#footer {
+		padding-bottom: 3rem;
+
+		p a {
+			font-size: 0.7rem;
+		}
+	}
+}

@@ -1,0 +1,71 @@
+/*********************************************************************************/
+/* Sections                                                                      */
+/*********************************************************************************/
+
+#zeroSection {
+	width: $full-width;
+	position: relative;
+}
+
+#sliSection,
+#primSection, 
+#secSection, 
+#thirdSection, 
+#fourthSection,
+#fifthSection,
+#social {
+	width: 90%;
+	margin-bottom: u(9rem);
+	padding: 0 5%;
+}
+
+#formSection {
+	width: $full-width;
+	margin-bottom: u(9rem);
+}
+
+#sliSection,
+#primSection, 
+#secSection, 
+#thirdSection, 
+#fourthSection {
+	@include pie-clearfix;
+}
+
+#sliSection h2,
+#primSection h2,
+#secSection h2,
+#thirdSection h2,
+#fourthSection h2,
+#fifthSection h2,
+#formSection h2,
+#conSection {
+	text-align: center;
+	padding-top: u(3rem);
+	padding-bottom: u(2rem);
+}
+
+#primSection {
+
+	p.intro {
+		margin-bottom: u(2rem);
+		font-style: italic;
+	}
+}
+
+#conSection {
+	width: 37%;
+	margin: 0 auto;
+	margin-bottom: u(9rem);
+
+	p a {
+		font-size: u(1rem);
+		font-style: italic;
+		color: $blue;
+		margin-top: u(5rem);
+
+		&:hover {
+			color: $blue_hover;
+		}
+	}
+}

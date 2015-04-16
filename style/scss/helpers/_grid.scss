@@ -1,0 +1,117 @@
+//*********************************************************************************/
+//* Grid / based on 960 grid system / http://960.gs/                              */
+//*********************************************************************************/
+
+// usage: in _basics.scss add
+// @include grid_base; 
+// for a simple 12 columns grid system or
+// @include grid_base (10, 1000px);
+// for a 10 columns and 1000px width grid system
+
+
+//*********************************************************************************/
+//* Config                                                                        */
+//*********************************************************************************/
+
+$width: 960px;
+$gutter: 20px;
+$columns: 12;
+
+
+//*********************************************************************************/
+//* Basic                                                                         */
+//*********************************************************************************/
+
+@mixin grid_base (
+	$columns: 12,
+	$width: 960px,
+	$gutter: 20px,
+	$prefix: true,
+	$push: true
+) {
+
+	$column_width: $width / $columns;
+
+	body {
+		min-width: $width;
+	}
+
+	.grid {
+		display: inline;
+		float: left;
+		margin-left: $gutter / 2;
+		margin-right: $gutter / 2;
+	}
+
+	.relative {
+		position: relative;
+	}
+
+	@include generate_grid (
+		$columns,
+		$width,
+		$gutter,
+		$prefix,
+		$push );
+}
+
+
+//*********************************************************************************/
+//* Loops                                                                         */
+//*********************************************************************************/
+
+@mixin generate_grid (
+	$columns: 12,
+	$width: 960px,
+	$gutter: 20px,
+	$prefix: true,
+	$push: true
+) {
+
+	$column_width: $width / $columns;
+	$container_name: ".container_#{$columns}";
+
+	#{$container_name} {
+		margin-left: auto;
+		margin-right: auto;
+		width: $width;
+	}
+
+	@for $i from 1 through $columns {
+
+		.grid_#{$i} {
+			@extend .grid;
+			#{$container_name} & {
+				width: $i * $column_width - $gutter;
+			}
+		}
+
+		#{$container_name} {
+			@if $prefix == true {
+				.prefix_#{$i} {
+					padding-left: $i * $column_width;
+				}
+
+				.suffix_#{$i} {
+					padding-right: $i * $column_width;
+				}
+			}
+		}
+
+		@if $push == true {
+			.push_#{$i} {
+				@extend .relative;
+				#{$container_name} & {
+					left: $i * $column_width;
+				}
+			}
+
+			.pull_#{$i} {
+				@extend .relative;
+				#{$container_name} & {
+					left: -$i * $column_width;
+				}
+			}
+		}
+	}
+}

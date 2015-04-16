@@ -1,0 +1,82 @@
+/*********************************************************************************/
+/* Accordions                                                                    */
+/*********************************************************************************/
+
+#accordion {
+
+	h3 {
+		font-size: u(1rem);
+		line-height: u(1.7rem);
+		font-family: $font_4;
+		font-weight: 300;
+		color: $blue;
+		text-transform: uppercase;
+
+		&:hover {
+			color: $blue_hover;
+		}
+	}
+}
+
+.ui-accordion .ui-accordion-content, 
+.ui-accordion .ui-corner-bottom, 
+.ui-accordion .ui-corner-right, 
+.ui-accordion .ui-corner-br, 
+.ui-accordion .ui-accordion-header, 
+.ui-accordion .ui-widget-content {
+	@include border-radius(0);
+	border: 0 none;
+	padding: 0;
+	background-image: none;
+	background-color: transparent;
+}
+
+.ui-accordion .ui-accordion-content {
+	margin-bottom: u(3rem);
+}
+
+.ui-accordion .ui-accordion-header:focus {
+	outline: none;
+}
+
+.ui-accordion .ui-accordion-icons {
+	padding-left: 2%;
+}
+
+.ui-icon {
+	width: u(1rem);
+	height: u(1rem);
+}
+
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+	position: absolute;
+	left: u(0.2rem);
+	top: 50%;
+	margin-top: -6px;
+}
+
+.ui-state-default {
+	color: $blue;
+}
+
+.ui-state-active {
+	color: $blue_hover;
+}
+
+.ui-state-default .ui-icon {
+	background-image: url("../../img/icons/plus.svg");
+	background-size: 80%;
+	opacity: 0.25;
+}
+
+.ui-state-active .ui-icon {
+	background-image: url("../../img/icons/minus.svg");
+	background-size: 80%;
+	opacity: 0.5;
+}
+
+.ui-widget {
+	font-size: u(0.9rem);
+	font-family: $font_4;
+	font-weight: 300;
+}

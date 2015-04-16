@@ -1,0 +1,62 @@
+/*********************************************************************************/
+/* Basics                                                                        */
+/*********************************************************************************/
+
+body {
+	font-size: u(0.9rem);
+	line-height: u(1.25rem);
+	width: $full-width;
+	background: url("../../img/main-bg.jpg") repeat fixed;
+	margin: 0 auto;
+	font-family: $font_4;
+	font-weight: 300;
+}
+
+h1, h2, h3 {
+	color: $blue;
+	font-weight: 300;
+}
+
+h1, h2 {
+	font-family: $font_2;
+}
+
+h1 {
+	font-size: u(5.5rem);
+	margin-bottom: u(1rem);
+}
+
+h2 {
+	font-size: u(64px);
+	margin-bottom: u(2.1rem);
+	padding: u(2rem);
+}
+
+h3 {
+	font-size: u(2rem);
+	line-height: u(1.7rem);
+	text-transform: uppercase;
+	margin-bottom: u(1rem);
+}
+
+p {
+	font-size: u(1rem);
+	line-height: u(1.5rem);
+	margin-top: u(1rem);
+}
+
+a {
+	font-size: u(1rem);
+	line-height: u(1.7rem);
+	text-decoration: none;
+	color: $blue;
+}
+
+a:hover {
+	color: $blue_hover;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}

@@ -1,0 +1,23 @@
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+#header {
+	width: $full-width;
+	text-align: center;
+	padding: u(2rem 0);
+	position: absolute;
+	top: u(3.5rem);
+	left: 0;
+	z-index: 9999;
+
+	h1 a {
+		font-size: u(5.5rem);
+	}
+
+	p {
+		font-style: italic;
+		color: $blue;
+		margin-top: u(3rem);
+	}
+}
