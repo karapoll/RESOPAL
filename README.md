@@ -5,9 +5,7 @@ a playground BOILERPLATE /
 COMPASS / JQUERY / JQUERY-UI / GRUNT /
 
 
-html5shiv.js
-modernizr.js
-PIE.htc
+html5shiv.js / modernizr.js / PIE.htc
 
 
 function / 
