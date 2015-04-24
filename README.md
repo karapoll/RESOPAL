@@ -1,7 +1,7 @@
-RESOPAL 0.1.0 
-==============================================================
+RESOPAL 0.1.0 / 
 
-# A playground BOILERPLATE including
+a playground BOILERPLATE 
+==============================================================
 
 COMPASS / JQUERY / JQUERY-UI / GRUNT /
 
