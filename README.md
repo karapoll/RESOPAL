@@ -1,26 +1,32 @@
-# RESOPAL
-a playground BOILERPLATE /
-
+RESOPAL 0.1.0 / a playground BOILERPLATE 
+==============================================================
 
 COMPASS / JQUERY / JQUERY-UI / GRUNT /
-
 
 html5shiv.js / modernizr.js / PIE.htc
 
 
-function / 
+
+Functions
+==============================================================
 
 rem-px fallback
 
 
-mixin /
+
+Mixins
+==============================================================
 
 svg-png fallback
 
 cross-browser opacity
 
+scss 960 grid system
 
-slick slider / 
+
+
+Slider
+==============================================================
 
 http://kenwheeler.github.io/slick/
 
